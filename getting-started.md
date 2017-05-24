@@ -116,6 +116,8 @@ The `myWatcher` variable is a global variable, so will never go out of scope.
 
 As a further aside about the lifecycle of variables - in the Console window, each time you type a line and hit enter, a distinct Lua scope is created, executed and finished. This means that `local` variables created in the Console window will immediately become inaccessible when you hit Enter, because their scope has closed.
 
+You can use [hs.settings](http://www.hammerspoon.org/docs/hs.settings.html) to store variables between Hammerspoon sessions.
+
 ### <a name="winmovenethack"></a>More complex window movement
 
 We can build on the simple window movement example to implement a set of keyboard shortcuts that allow us to move a window in all directions, using the `nethack` movement keys:
